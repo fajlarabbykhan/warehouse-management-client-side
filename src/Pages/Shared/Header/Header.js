@@ -65,7 +65,7 @@ const Header = () => {
                                 }
                                 {
                                     user ?
-                                        <li className="nav-item" onClick={handleSignOut}>
+                                        <li className="nav-item  m-2" onClick={handleSignOut}>
                                             <ActiveLink className="nav-link" to="/signin">Sign Out</ActiveLink>
                                         </li> :
                                         <li className="nav-item ">

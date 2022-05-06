@@ -1,18 +1,27 @@
 import React, { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init'
 const Signup = () => {
     const navigate = useNavigate()
     const nameRef = useRef('')
     const emailRef = useRef('')
     const passwordRef = useRef('')
     const [agree, setAgree] = useState(false)
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+
+
     const handleSignUp = async (event) => {
         event.preventDefault()
         const email = emailRef.current.value
         const password = passwordRef.current.value
         const name = nameRef.current.value
-        // await createUserWithEmailAndPassword(email, password)
+        await createUserWithEmailAndPassword(email, password)
         // updateProfile({ displayName: name });
         // // alert('Updated profile');
         // navigate('/practiceareas')
@@ -22,7 +31,9 @@ const Signup = () => {
     const navigatesignin = event => {
         navigate('/signin')
     }
-
+    if (user) {
+        navigate('/')
+    }
 
 
     return (
