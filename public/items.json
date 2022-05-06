@@ -6,33 +6,33 @@
     },
     {
         "id": 2,
-        "name": "TV",
-        "img": "https://i.ibb.co/hM8f2Q8/tv.jpg"
-    },
-    {
-        "id": 3,
-        "name": "FRIDGE",
-        "img": "https://i.ibb.co/cJjKGsG/Fridge.jpg"
-    },
-    {
-        "id": 4,
-        "name": "AC",
-        "img": "https://i.ibb.co/XSSr5f4/ac.jpg"
-    },
-    {
-        "id": 5,
         "name": "MOBILE",
         "img": "https://i.ibb.co/2MzQw8r/mobile.jpg"
     },
     {
-        "id": 6,
+        "id": 3,
         "name": "CAMERA",
         "img": "https://i.ibb.co/S7gbJxz/camera.jpg"
     },
     {
-        "id": 7,
+        "id": 4,
         "name": "ZEISS LENSES",
         "img": "https://i.ibb.co/CbMvnNF/zeiss-otus-lenses.jpg"
+    },
+    {
+        "id": 5,
+        "name": "TV",
+        "img": "https://i.ibb.co/hM8f2Q8/tv.jpg"
+    },
+    {
+        "id": 6,
+        "name": "AC",
+        "img": "https://i.ibb.co/XSSr5f4/ac.jpg"
+    },
+    {
+        "id": 7,
+        "name": "FRIDGE",
+        "img": "https://i.ibb.co/cJjKGsG/Fridge.jpg"
     },
     {
         "id": 8,
