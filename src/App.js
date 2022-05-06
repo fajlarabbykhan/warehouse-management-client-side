@@ -9,6 +9,7 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Blogs from './Pages/Blogs/Blogs';
 import ItemDetails from './Pages/ItemDetails/ItemDetails';
 import Signin from './Pages/Signin/Signin/Signin';
+import Signup from './Pages/Signin/Signup/Signup';
 function App() {
   return (
     <div className="">
@@ -20,6 +21,7 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/signin' element={<Signin></Signin>}></Route>
+        <Route path='/signup' element={<Signup></Signup>}></Route>
 
 
         <Route path='*' element={<NotFound></NotFound>}> </Route>
