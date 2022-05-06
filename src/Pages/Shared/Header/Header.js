@@ -1,7 +1,14 @@
 import React from 'react';
 import Logo from '../../../images/logo.jpg'
 import ActiveLink from '../ActiveLink/ActiveLink'
+import { useAuthState } from 'react-firebase-hooks/auth'
+import auth from '../../../firebase.init'
+import { signOut } from 'firebase/auth';
 const Header = () => {
+    const [user] = useAuthState(auth)
+    const handleSignOut = () => {
+        signOut(auth)
+    }
     return (
         <header className='sticky-top'>
             <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-light  fs-5">
@@ -27,18 +34,44 @@ const Header = () => {
                         </ul>
                         <span className="fs-5">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
-                                    <ActiveLink className="nav-link active" aria-current="page" to="/manageItems">Manage Items</ActiveLink>
-                                </li>
-                                <li className="nav-item">
-                                    <ActiveLink className="nav-link" to="/addItems">Add Item</ActiveLink>
-                                </li>
-                                <li className="nav-item">
-                                    <ActiveLink className="nav-link" to="/myItems">My items</ActiveLink>
-                                </li>
-                                <li className="nav-item">
-                                    <ActiveLink className="nav-link" to="/login">Login</ActiveLink>
-                                </li>
+                                {
+                                    user ?
+                                        <li className="nav-item m-2">
+                                            <ActiveLink className="nav-link active" aria-current="page" to="/manageItems">Manage Items</ActiveLink>
+                                        </li>
+                                        :
+                                        <li className="nav-item  m-2">
+                                            user
+                                        </li>
+                                }
+
+                                {
+                                    user ?
+                                        <li className="nav-item  m-2">
+                                            <ActiveLink className="nav-link" to="/addItems">Add Item</ActiveLink>
+                                        </li> :
+                                        <li className="nav-item  m-2">
+                                            user
+                                        </li>
+                                }
+                                {
+                                    user ?
+                                        <li className="nav-item  m-2">
+                                            <ActiveLink className="nav-link" to="/myItems">My items</ActiveLink>
+                                        </li> :
+                                        <li className="nav-item  m-2">
+                                            user
+                                        </li>
+                                }
+                                {
+                                    user ?
+                                        <li className="nav-item" onClick={handleSignOut}>
+                                            <ActiveLink className="nav-link" to="/signin">Sign Out</ActiveLink>
+                                        </li> :
+                                        <li className="nav-item ">
+                                            <ActiveLink className="nav-link" to="/signin">Sign in</ActiveLink>
+                                        </li>
+                                }
                             </ul>
                         </span>
                     </div>
