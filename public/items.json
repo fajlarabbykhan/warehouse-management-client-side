@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "HOME AUDIO & VIDEO",
+        "img": "https://i.ibb.co/QbR6GCK/home-theater.jpg"
+    },
+    {
+        "id": 2,
+        "name": "TV",
+        "img": "https://i.ibb.co/hM8f2Q8/tv.jpg"
+    },
+    {
+        "id": 3,
+        "name": "FRIDGE",
+        "img": "https://i.ibb.co/cJjKGsG/Fridge.jpg"
+    },
+    {
+        "id": 4,
+        "name": "AC",
+        "img": "https://i.ibb.co/XSSr5f4/ac.jpg"
+    },
+    {
+        "id": 5,
+        "name": "MOBILE",
+        "img": "https://i.ibb.co/2MzQw8r/mobile.jpg"
+    },
+    {
+        "id": 6,
+        "name": "CAMERA",
+        "img": "https://i.ibb.co/S7gbJxz/camera.jpg"
+    },
+    {
+        "id": 7,
+        "name": "ZEISS LENSES",
+        "img": "https://i.ibb.co/CbMvnNF/zeiss-otus-lenses.jpg"
+    },
+    {
+        "id": 8,
+        "name": "WASHING MACHINE",
+        "img": "https://i.ibb.co/6JFgBCN/washingmaching.jpg"
+    },
+    {
+        "id": 9,
+        "name": "OVEN",
+        "img": "https://i.ibb.co/nPfPJcW/oven.jpg"
+    },
+    {
+        "id": 10,
+        "name": "FAN",
+        "img": "https://i.ibb.co/qRPndJS/fan.jpg"
+    }
+]
