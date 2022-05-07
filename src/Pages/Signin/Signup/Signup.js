@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
 import SocialSignin from '../SocialSignin/SocialSignin';
+import Loading from '../../Shared/Loading/Loading';
 const Signup = () => {
     const navigate = useNavigate()
     const nameRef = useRef('')
@@ -20,7 +21,10 @@ const Signup = () => {
         navigate('/signin')
     }
     if (user) {
-        navigate('/')
+        console.log(user)
+    }
+    if (loading || updating) {
+        return <Loading></Loading>
     }
     const handleSignUp = async (event) => {
         event.preventDefault()
@@ -28,10 +32,10 @@ const Signup = () => {
         const password = passwordRef.current.value
         const name = nameRef.current.value
         await createUserWithEmailAndPassword(email, password)
-        // updateProfile({ displayName: name });
+        await updateProfile({ displayName: name });
         // // alert('Updated profile');
-        // navigate('/practiceareas')
-        // console.log(name, email, password);
+        console.log(name, email, password);
+        navigate('/')
 
     }
 

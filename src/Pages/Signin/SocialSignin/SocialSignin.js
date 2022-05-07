@@ -3,6 +3,7 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
 import { useLocation, useNavigate } from 'react-router-dom';
 import GoogleLogo from '../../../images/google.svg'
+import Loading from '../../Shared/Loading/Loading';
 
 const SocialSignin = () => {
     const navigate = useNavigate()
@@ -17,7 +18,7 @@ const SocialSignin = () => {
         </div>
     }
     if (loading1) {
-        return <p>Loading...</p>;
+        return <Loading></Loading>
     }
     if (user1) {
         navigate(from, { replace: true })

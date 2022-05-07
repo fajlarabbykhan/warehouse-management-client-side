@@ -5,6 +5,7 @@ const Item = ({ item }) => {
     const { id, name, img } = item || {}
     const navigate = useNavigate()
     const naivgateToItem = id => {
+
         navigate(`/item/${id}`)
     }
     return (

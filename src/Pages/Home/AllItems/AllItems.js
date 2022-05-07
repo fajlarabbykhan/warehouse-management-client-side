@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item'
 const AllItems = () => {
+
     const [items, setItems] = useState([])
     useEffect(() => {
         fetch('items.json')

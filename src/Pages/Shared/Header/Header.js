@@ -4,10 +4,14 @@ import ActiveLink from '../ActiveLink/ActiveLink'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import auth from '../../../firebase.init'
 import { signOut } from 'firebase/auth';
+import Loading from '../Loading/Loading';
 const Header = () => {
-    const [user] = useAuthState(auth)
+    const [user, loading] = useAuthState(auth)
     const handleSignOut = () => {
         signOut(auth)
+    }
+    if (loading) {
+        return <Loading></Loading>
     }
     return (
         <header className='sticky-top'>
@@ -41,7 +45,7 @@ const Header = () => {
                                         </li>
                                         :
                                         <li className="nav-item  m-2">
-                                            user
+
                                         </li>
                                 }
 
@@ -51,7 +55,7 @@ const Header = () => {
                                             <ActiveLink className="nav-link" to="/addItems">Add Item</ActiveLink>
                                         </li> :
                                         <li className="nav-item  m-2">
-                                            user
+
                                         </li>
                                 }
                                 {
@@ -60,7 +64,16 @@ const Header = () => {
                                             <ActiveLink className="nav-link" to="/myItems">My items</ActiveLink>
                                         </li> :
                                         <li className="nav-item  m-2">
-                                            user
+
+                                        </li>
+                                }
+                                {
+                                    user ?
+                                        <li className="nav-item  mt-3 link-success">
+                                            {user.displayName}
+                                        </li> :
+                                        <li className="nav-item  m-2">
+
                                         </li>
                                 }
                                 {
