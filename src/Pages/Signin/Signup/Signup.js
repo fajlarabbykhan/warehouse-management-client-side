@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
+import SocialSignin from '../SocialSignin/SocialSignin';
 const Signup = () => {
     const navigate = useNavigate()
     const nameRef = useRef('')
@@ -13,9 +14,14 @@ const Signup = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
-
-
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [updateProfile, updating, error2] = useUpdateProfile(auth);
+    const navigatesignin = event => {
+        navigate('/signin')
+    }
+    if (user) {
+        navigate('/')
+    }
     const handleSignUp = async (event) => {
         event.preventDefault()
         const email = emailRef.current.value
@@ -28,27 +34,21 @@ const Signup = () => {
         // console.log(name, email, password);
 
     }
-    const navigatesignin = event => {
-        navigate('/signin')
-    }
-    if (user) {
-        navigate('/')
-    }
+
 
 
     return (
         <div className='container w-50 mx-auto '>
 
-            <h2 className='text-primary text-center mt-1'>Sign up</h2>
+            <h2 className='text-primary text-center '>Sign up</h2>
             <form onSubmit={handleSignUp}>
-                <div className="mb-3">
+                <div className="mb-2">
                     <label htmlFor="exampleInputName" className="form-label">Name</label>
                     <input ref={nameRef} type="text" className="form-control" id="exampleInputName" required />
                 </div>
-                <div className="mb-3">
+                <div className="mb-2">
                     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                     <input ref={emailRef} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
-                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
@@ -65,7 +65,9 @@ const Signup = () => {
                     disabled={!agree} type="submit" className="btn btn-primary">Sign up
                 </button>
             </form>
-            <p className='mt-4'>Already have an Account ? <Link to='/signin' className='text-danger cursor-pointer text-decoration-none' onClick={navigatesignin}>Please Signin</Link></p>
+            <p className='mt-3'>Already have an Account ? <Link to='/signin' className='text-danger cursor-pointer text-decoration-none' onClick={navigatesignin}>Please Signin</Link></p>
+
+            <SocialSignin></SocialSignin>
         </div>
 
     );
