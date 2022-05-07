@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item'
+import PageTitle from '../../Shared/PageTitel/PageTitle'
 const AllItems = () => {
 
     const [items, setItems] = useState([])
@@ -10,6 +11,8 @@ const AllItems = () => {
     }, [])
     return (
         <div className="container">
+            <PageTitle title="Items"></PageTitle>
+
             {/* <h1 className='text-center m-2'>Items ({items.length})</h1> */}
             <div className='row  mt-4'>
                 {

@@ -1,8 +1,11 @@
 import React from 'react';
+import PageTitle from '../Shared/PageTitel/PageTitle';
 
 const Blogs = () => {
     return (
+
         <div className='container mt-5'>
+            <PageTitle title="Blogs"></PageTitle>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">

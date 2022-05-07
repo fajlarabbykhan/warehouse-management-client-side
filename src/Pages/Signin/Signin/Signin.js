@@ -6,6 +6,7 @@ import SocialSignin from '../SocialSignin/SocialSignin';
 import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PageTitle from '../../Shared/PageTitel/PageTitle'
 const Signin = () => {
     const navigate = useNavigate()
     const emailRef = useRef('')
@@ -57,6 +58,7 @@ const Signin = () => {
 
     return (
         <div className="container w-50 mx-auto">
+            <PageTitle title="Sign In"></PageTitle>
             <h2 className='text-primary text-center mt-1'>Sign In</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">

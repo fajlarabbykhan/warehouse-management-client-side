@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import auth from '../../../firebase.init'
 import SocialSignin from '../SocialSignin/SocialSignin';
 import Loading from '../../Shared/Loading/Loading';
+import PageTitle from '../../Shared/PageTitel/PageTitle'
 const Signup = () => {
     const navigate = useNavigate()
     const nameRef = useRef('')
@@ -43,7 +44,7 @@ const Signup = () => {
 
     return (
         <div className='container w-50 mx-auto '>
-
+            <PageTitle title="Sign Up"></PageTitle>
             <h2 className='text-primary text-center '>Sign up</h2>
             <form onSubmit={handleSignUp}>
                 <div className="mb-2">
