@@ -32,9 +32,9 @@ const Header = () => {
                             <li className="nav-item">
                                 <ActiveLink className="nav-link" to="/blogs">Blogs</ActiveLink>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <ActiveLink className="nav-link" to="/about">About</ActiveLink>
-                            </li>
+                            </li> */}
                         </ul>
                         <span className="fs-5">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
