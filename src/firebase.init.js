@@ -5,12 +5,12 @@ import { getAuth } from "firebase/auth"
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCpJDxfXMrLOvUSL78zbBPuJL8FygvI2dg",
-    authDomain: "eelectronic-3d8f6.firebaseapp.com",
-    projectId: "eelectronic-3d8f6",
-    storageBucket: "eelectronic-3d8f6.appspot.com",
-    messagingSenderId: "346263002484",
-    appId: "1:346263002484:web:1a35696146b2ecb3e32021"
+    apiKey: "AIzaSyBXiM2UtUd5EWAjE8fgRsSEoLEt6zuvTfA",
+    authDomain: "electronic-ecfcf.firebaseapp.com",
+    projectId: "electronic-ecfcf",
+    storageBucket: "electronic-ecfcf.appspot.com",
+    messagingSenderId: "443527125641",
+    appId: "1:443527125641:web:d4f2ced09983366ce7c458"
 };
 
 // Initialize Firebase

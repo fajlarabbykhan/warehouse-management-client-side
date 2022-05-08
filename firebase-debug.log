@@ -1,35 +1,35 @@
-[debug] [2022-05-07T13:03:06.563Z] ----------------------------------------------------------------------
-[debug] [2022-05-07T13:03:06.588Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fajla\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2022-05-07T13:03:06.589Z] CLI Version:   10.8.0
-[debug] [2022-05-07T13:03:06.589Z] Platform:      win32
-[debug] [2022-05-07T13:03:06.590Z] Node Version:  v16.13.1
-[debug] [2022-05-07T13:03:06.935Z] Time:          Sat May 07 2022 19:03:06 GMT+0600 (Bangladesh Standard Time)
-[debug] [2022-05-07T13:03:06.935Z] ----------------------------------------------------------------------
+[debug] [2022-05-07T13:19:05.934Z] ----------------------------------------------------------------------
+[debug] [2022-05-07T13:19:05.937Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fajla\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-07T13:19:05.939Z] CLI Version:   10.8.0
+[debug] [2022-05-07T13:19:05.939Z] Platform:      win32
+[debug] [2022-05-07T13:19:05.939Z] Node Version:  v16.13.1
+[debug] [2022-05-07T13:19:05.941Z] Time:          Sat May 07 2022 19:19:05 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-07T13:19:05.941Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-05-07T13:03:07.106Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-05-07T13:03:07.106Z] > authorizing via signed-in user (fajlarabbyk55@gmail.com)
-[debug] [2022-05-07T13:03:07.107Z] [iam] checking project electronic-ecfcf for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2022-05-07T13:03:07.110Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions [none]
-[debug] [2022-05-07T13:03:07.111Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2022-05-07T13:03:09.462Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions 200
-[debug] [2022-05-07T13:03:09.462Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2022-05-07T13:03:09.464Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf [none]
-[debug] [2022-05-07T13:03:10.000Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf 200
-[debug] [2022-05-07T13:03:10.000Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf {"projectId":"electronic-ecfcf","projectNumber":"443527125641","displayName":"electronic","name":"projects/electronic-ecfcf","resources":{"hostingSite":"electronic-ecfcf"},"state":"ACTIVE"}
+[debug] [2022-05-07T13:19:06.040Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-07T13:19:06.041Z] > authorizing via signed-in user (fajlarabbyk55@gmail.com)
+[debug] [2022-05-07T13:19:06.041Z] [iam] checking project electronic-ecfcf for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-07T13:19:06.044Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions [none]
+[debug] [2022-05-07T13:19:06.045Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T13:19:07.369Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions 200
+[debug] [2022-05-07T13:19:07.369Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T13:19:07.373Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf [none]
+[debug] [2022-05-07T13:19:07.897Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf 200
+[debug] [2022-05-07T13:19:07.898Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf {"projectId":"electronic-ecfcf","projectNumber":"443527125641","displayName":"electronic","name":"projects/electronic-ecfcf","resources":{"hostingSite":"electronic-ecfcf"},"state":"ACTIVE"}
 [info] 
 [info] === Deploying to 'electronic-ecfcf'...
 [info] 
 [info] i  deploying hosting 
-[debug] [2022-05-07T13:03:10.007Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf [none]
-[debug] [2022-05-07T13:03:10.412Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf 200
-[debug] [2022-05-07T13:03:10.412Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf {"projectId":"electronic-ecfcf","projectNumber":"443527125641","displayName":"electronic","name":"projects/electronic-ecfcf","resources":{"hostingSite":"electronic-ecfcf"},"state":"ACTIVE"}
-[debug] [2022-05-07T13:03:10.418Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions [none]
-[debug] [2022-05-07T13:03:10.418Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
-[debug] [2022-05-07T13:03:12.128Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions 500
-[debug] [2022-05-07T13:03:12.128Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[debug] [2022-05-07T13:19:07.905Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf [none]
+[debug] [2022-05-07T13:19:08.563Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf 200
+[debug] [2022-05-07T13:19:08.564Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf {"projectId":"electronic-ecfcf","projectNumber":"443527125641","displayName":"electronic","name":"projects/electronic-ecfcf","resources":{"hostingSite":"electronic-ecfcf"},"state":"ACTIVE"}
+[debug] [2022-05-07T13:19:08.566Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions [none]
+[debug] [2022-05-07T13:19:08.567Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-07T13:19:10.413Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions 500
+[debug] [2022-05-07T13:19:10.413Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
 [error] 
 [error] Error: HTTP Error: 500, Internal error encountered.
-[debug] [2022-05-07T13:03:12.411Z] Error Context: {
+[debug] [2022-05-07T13:19:10.776Z] Error Context: {
   "body": {
     "error": {
       "code": 500,
@@ -41,38 +41,38 @@
     "statusCode": 500
   }
 }
-[debug] [2022-05-07T13:04:54.290Z] ----------------------------------------------------------------------
-[debug] [2022-05-07T13:04:54.293Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fajla\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2022-05-07T13:04:54.294Z] CLI Version:   10.8.0
-[debug] [2022-05-07T13:04:54.294Z] Platform:      win32
-[debug] [2022-05-07T13:04:54.294Z] Node Version:  v16.13.1
-[debug] [2022-05-07T13:04:54.295Z] Time:          Sat May 07 2022 19:04:54 GMT+0600 (Bangladesh Standard Time)
-[debug] [2022-05-07T13:04:54.295Z] ----------------------------------------------------------------------
+[debug] [2022-05-07T13:27:16.853Z] ----------------------------------------------------------------------
+[debug] [2022-05-07T13:27:16.875Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fajla\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-07T13:27:16.875Z] CLI Version:   10.8.0
+[debug] [2022-05-07T13:27:16.875Z] Platform:      win32
+[debug] [2022-05-07T13:27:16.876Z] Node Version:  v16.13.1
+[debug] [2022-05-07T13:27:16.980Z] Time:          Sat May 07 2022 19:27:16 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-07T13:27:16.980Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-05-07T13:04:54.391Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-05-07T13:04:54.392Z] > authorizing via signed-in user (fajlarabbyk55@gmail.com)
-[debug] [2022-05-07T13:04:54.392Z] [iam] checking project electronic-ecfcf for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2022-05-07T13:04:54.395Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions [none]
-[debug] [2022-05-07T13:04:54.396Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2022-05-07T13:04:55.623Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions 200
-[debug] [2022-05-07T13:04:55.623Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2022-05-07T13:04:55.625Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf [none]
-[debug] [2022-05-07T13:04:56.062Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf 200
-[debug] [2022-05-07T13:04:56.063Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf {"projectId":"electronic-ecfcf","projectNumber":"443527125641","displayName":"electronic","name":"projects/electronic-ecfcf","resources":{"hostingSite":"electronic-ecfcf"},"state":"ACTIVE"}
+[debug] [2022-05-07T13:27:17.078Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-07T13:27:17.079Z] > authorizing via signed-in user (fajlarabbyk55@gmail.com)
+[debug] [2022-05-07T13:27:17.079Z] [iam] checking project electronic-ecfcf for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-07T13:27:17.083Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions [none]
+[debug] [2022-05-07T13:27:17.083Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T13:27:18.377Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions 200
+[debug] [2022-05-07T13:27:18.377Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/electronic-ecfcf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T13:27:18.379Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf [none]
+[debug] [2022-05-07T13:27:19.143Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf 200
+[debug] [2022-05-07T13:27:19.143Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf {"projectId":"electronic-ecfcf","projectNumber":"443527125641","displayName":"electronic","name":"projects/electronic-ecfcf","resources":{"hostingSite":"electronic-ecfcf"},"state":"ACTIVE"}
 [info] 
 [info] === Deploying to 'electronic-ecfcf'...
 [info] 
 [info] i  deploying hosting 
-[debug] [2022-05-07T13:04:56.069Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf [none]
-[debug] [2022-05-07T13:04:56.737Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf 200
-[debug] [2022-05-07T13:04:56.738Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf {"projectId":"electronic-ecfcf","projectNumber":"443527125641","displayName":"electronic","name":"projects/electronic-ecfcf","resources":{"hostingSite":"electronic-ecfcf"},"state":"ACTIVE"}
-[debug] [2022-05-07T13:04:56.740Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions [none]
-[debug] [2022-05-07T13:04:56.741Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
-[debug] [2022-05-07T13:04:58.233Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions 500
-[debug] [2022-05-07T13:04:58.233Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[debug] [2022-05-07T13:27:19.149Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf [none]
+[debug] [2022-05-07T13:27:19.650Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf 200
+[debug] [2022-05-07T13:27:19.650Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/electronic-ecfcf {"projectId":"electronic-ecfcf","projectNumber":"443527125641","displayName":"electronic","name":"projects/electronic-ecfcf","resources":{"hostingSite":"electronic-ecfcf"},"state":"ACTIVE"}
+[debug] [2022-05-07T13:27:19.653Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions [none]
+[debug] [2022-05-07T13:27:19.653Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-07T13:27:21.285Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions 500
+[debug] [2022-05-07T13:27:21.285Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/443527125641/sites/electronic-ecfcf/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
 [error] 
 [error] Error: HTTP Error: 500, Internal error encountered.
-[debug] [2022-05-07T13:04:58.464Z] Error Context: {
+[debug] [2022-05-07T13:27:21.550Z] Error Context: {
   "body": {
     "error": {
       "code": 500,
