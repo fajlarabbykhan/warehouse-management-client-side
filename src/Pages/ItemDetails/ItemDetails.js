@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 
 const ItemDetails = () => {
     const { itemId } = useParams()
+
     return (
         <div>
             <h2>Welcome to detail: {itemId}</h2>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 const Item = ({ item }) => {
 
-    const { id, name, img } = item || {}
+    const { _id, name, img } = item || {}
     const navigate = useNavigate()
     const naivgateToItem = id => {
 
@@ -14,7 +14,7 @@ const Item = ({ item }) => {
                 <img src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
-                    <button onClick={() => { naivgateToItem(id) }} className="btn btn-primary" >See All</button>
+                    <button onClick={() => { naivgateToItem(_id) }} className="btn btn-primary" >See All</button>
                 </div>
             </div>
         </div>

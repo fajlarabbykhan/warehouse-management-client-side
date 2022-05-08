@@ -5,7 +5,7 @@ const AllItems = () => {
 
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch('items.json')
+        fetch('http://localhost:5000/items')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
@@ -16,7 +16,7 @@ const AllItems = () => {
             {/* <h1 className='text-center m-2'>Items ({items.length})</h1> */}
             <div className='row  mt-4'>
                 {
-                    items.map(item => <Item key={item.id} item={item} ></Item>)
+                    items.map(item => <Item key={item._id} item={item} ></Item>)
                 }
 
             </div>
